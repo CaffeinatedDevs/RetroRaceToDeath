@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: c926a08a540c7954a819afec4e6bba1d
+timeCreated: 1444203514
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Back
+    100002: ExhaustL
+    100004: ExhaustM
+    100006: ExhaustR
+    100008: Front
+    100010: Hood Stripe
+    100012: Hood Stripe001
+    100014: //RootNode
+    100016: Rear
+    100018: Spacer
+    100020: Spacer 1
+    100022: Spacer 2
+    100024: Spacer 3
+    100026: Wheel BL
+    100028: Wheel BR
+    100030: Wheel FL
+    100032: Wheel FR
+    100034: Wheel Sq
+    100036: Wheel Sq001
+    100038: Wheel Sq002
+    100040: Wheel Sq003
+    100042: Wheel Ver
+    100044: Wheel Ver001
+    400000: Back
+    400002: ExhaustL
+    400004: ExhaustM
+    400006: ExhaustR
+    400008: Front
+    400010: Hood Stripe
+    400012: Hood Stripe001
+    400014: //RootNode
+    400016: Rear
+    400018: Spacer
+    400020: Spacer 1
+    400022: Spacer 2
+    400024: Spacer 3
+    400026: Wheel BL
+    400028: Wheel BR
+    400030: Wheel FL
+    400032: Wheel FR
+    400034: Wheel Sq
+    400036: Wheel Sq001
+    400038: Wheel Sq002
+    400040: Wheel Sq003
+    400042: Wheel Ver
+    400044: Wheel Ver001
+    2300000: Back
+    2300002: ExhaustL
+    2300004: ExhaustM
+    2300006: ExhaustR
+    2300008: Front
+    2300010: Hood Stripe
+    2300012: Hood Stripe001
+    2300014: Rear
+    2300016: Spacer
+    2300018: Spacer 1
+    2300020: Spacer 2
+    2300022: Spacer 3
+    2300024: Wheel BL
+    2300026: Wheel BR
+    2300028: Wheel FL
+    2300030: Wheel FR
+    2300032: Wheel Sq
+    2300034: Wheel Sq001
+    2300036: Wheel Sq002
+    2300038: Wheel Sq003
+    2300040: Wheel Ver
+    2300042: Wheel Ver001
+    3300000: Back
+    3300002: ExhaustL
+    3300004: ExhaustM
+    3300006: ExhaustR
+    3300008: Front
+    3300010: Hood Stripe
+    3300012: Hood Stripe001
+    3300014: Rear
+    3300016: Spacer
+    3300018: Spacer 1
+    3300020: Spacer 2
+    3300022: Spacer 3
+    3300024: Wheel BL
+    3300026: Wheel BR
+    3300028: Wheel FL
+    3300030: Wheel FR
+    3300032: Wheel Sq
+    3300034: Wheel Sq001
+    3300036: Wheel Sq002
+    3300038: Wheel Sq003
+    3300040: Wheel Ver
+    3300042: Wheel Ver001
+    4300000: Back
+    4300002: Rear
+    4300004: Hood Stripe
+    4300006: Wheel BR
+    4300008: Wheel Ver
+    4300010: Wheel Sq
+    4300012: Spacer
+    4300014: Wheel BL
+    4300016: Wheel Sq001
+    4300018: Wheel Ver001
+    4300020: Spacer
+    4300022: Wheel FR
+    4300024: Wheel Sq002
+    4300026: Spacer
+    4300028: Wheel FL
+    4300030: Wheel Sq003
+    4300032: Spacer
+    4300034: Front
+    4300036: ExhaustR
+    4300038: ExhaustL
+    4300040: ExhaustM
+    4300042: Hood Stripe001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
