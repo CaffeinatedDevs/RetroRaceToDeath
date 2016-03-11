@@ -4,8 +4,7 @@ using System.Collections;
 public class bonusSpawner : MonoBehaviour {
 	public GameObject coin, powerUpMonster, powerUpMissile;
 	public static float bonusCol, bonusToSpawn, spFlag;
-	public static int temp;
-	public static float delayTimer = 2f;
+	public static float delayTimer = 3f;
 	float timer;
 
 	// Use this for initialization

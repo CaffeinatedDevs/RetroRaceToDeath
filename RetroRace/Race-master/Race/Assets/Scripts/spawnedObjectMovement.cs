@@ -19,7 +19,7 @@ public class spawnedObjectMovement : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){		
-		if (col.gameObject.tag == "coinObj") {
+		if (col.gameObject.tag == "coinObj" || col.gameObject.tag == "powerMonster" || col.gameObject.tag == "powerMissile" || col.gameObject.tag == "eCar") {
 			Destroy(col.gameObject);
 			Destroy(gameObject);
 		}
