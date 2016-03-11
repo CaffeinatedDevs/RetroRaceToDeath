@@ -48,7 +48,7 @@ public class MapGen : MonoBehaviour {
             CreateMap(5);
         }
         GameObject tmp = tracks.Pop();
-        Debug.Log(tracks.Count);
+//        Debug.Log(tracks.Count);
         tmp.SetActive(true);
         tmp.transform.position = currentTrack.transform.GetChild(0).transform.GetChild(0).position;
         currentTrack = tmp;

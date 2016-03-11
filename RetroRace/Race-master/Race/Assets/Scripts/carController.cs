@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class carController : MonoBehaviour {
-	public int playerLife;
+	public int playerLife, coinCollected, missileCollected;
 	public float carSpeed;
 	public string carDirection;
 	public Quaternion originalRotation, tempRotation;
@@ -29,41 +29,66 @@ public class carController : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "eCar") {
-			audioMangr.carSound.Stop ();
-			audioMangr.raceBackground.Stop();
 			audioMangr.carCrash.Play ();
-			audioMangr.newHighScore.Play();
-            //GameManager.Instance.gameOver = true;
-            //Scoring.Instance.stopScore = true;
-            //GameManager.Instance.AddScoreToDb();
-            //Destroy(gameObject);
 			playerLife -= 1;
+			Debug.Log(playerLife);
 
 			if (playerLife >= 1) {
 				Destroy(col.gameObject);
 			} else {
+				Debug.Log(coinCollected);
 				Destroy(gameObject);
+				audioMangr.carSound.Stop ();
+				audioMangr.raceBackground.Stop();
+				audioMangr.newHighScore.Play();
 				GameManager.Instance.gameOver = true;
 				Scoring.Instance.stopScore = true;
 				GameManager.Instance.AddScoreToDb();
 			}
+		}
+
+		if (col.gameObject.tag == "coinObj") {
+			Destroy(col.gameObject);
+			coinCollected += 1;
+
+//			if (Scoring.Instance.score >= 20 && Scoring.Instance.score < 40) {
+//				enemyMovement.speed = 70.0f;
+//				coinMovement.speed = 70.0f;
+//				enemySpawner.delayTimer = 0.5f;
+//				coinSpawner.delayTimer = 2.0f;
+//			} else if (Scoring.Instance.score >= 40 && Scoring.Instance.score < 60) {
+//				enemyMovement.speed = 100.0f;
+//				coinMovement.speed = 100.0f;
+//				enemySpawner.delayTimer = 0.3f;
+//				coinSpawner.delayTimer = 1.5f;
+//			}
+		}
+
+		if (col.gameObject.tag == "powerMonster") {
+			Destroy(col.gameObject);
+			// monster scene
+		}
+
+		if (col.gameObject.tag == "powerMissile") {
+			Destroy(col.gameObject);
+			missileCollected++;
 		}
 	}
 
 	void CarArrowControls(){
 		if (GameManager.Instance.gameStarted == true && GameManager.Instance.gameOver == false) {
 			if (Input.GetButton ("Horizontal") && Input.GetAxisRaw("Horizontal") < 0.3f) {
-				position.x -= 0.6f;
+				position.x -= 0.75f;
 				tempRotation = carRotationLeft;
 			} else if (Input.GetButton ("Horizontal") && Input.GetAxisRaw("Horizontal") > 0.3f) {
-				position.x += 0.6f;
+				position.x += 0.75f;
 				tempRotation = carRotationRight;
 			} else {
 				tempRotation = carRotationOriginal;
 			}
 			
 			transform.rotation = Quaternion.Slerp(transform.rotation, tempRotation, Time.time * 0.25f);
-			position.x = Mathf.Clamp (position.x, -9.5f, 10.1f);
+			position.x = Mathf.Clamp (position.x, -10.0f, 10.6f);
 			transform.position = position;
 		}
 	}
