@@ -14,10 +14,14 @@ public class extraDestroyer : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "eCar" || col.gameObject.tag == "coinObj" || col.gameObject.tag == "powerMonster" || col.gameObject.tag == "powerMissile") {
+		if (col.gameObject.tag == "eCar") {
 			if (!Scoring.Instance.stopScore) {
 				Scoring.Instance.score++;
 			}
+			Destroy (col.gameObject);
+		}
+
+		if (col.gameObject.tag == "coinObj" || col.gameObject.tag == "powerMonster" || col.gameObject.tag == "powerMissile") {
 			Destroy (col.gameObject);
 		}
 	}
